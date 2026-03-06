@@ -20,6 +20,65 @@ const escapeTs = (value) =>
     .replace(/`/g, '\\`')
     .replace(/\$\{/g, '\\${');
 
+const inferCategory = (title, week) => {
+  const normalized = title.toLowerCase();
+  if (normalized.includes('linked list')) return 'Linked List';
+  if (normalized.includes('tree') || normalized.includes('bst') || normalized.includes('trie')) return 'Tree / Trie';
+  if (normalized.includes('graph') || normalized.includes('island') || normalized.includes('course')) return 'Graph';
+  if (normalized.includes('string') || normalized.includes('palindrome') || normalized.includes('anagram')) return 'String';
+  if (normalized.includes('stack') || normalized.includes('queue') || normalized.includes('parentheses')) return 'Stack / Queue';
+  if (normalized.includes('heap') || normalized.includes('kth') || normalized.includes('median')) return 'Heap / Priority Queue';
+  if (normalized.includes('dp') || normalized.includes('path') || normalized.includes('subsequence')) return 'Dynamic Programming';
+  if (week.includes('Arrays')) return 'Array';
+  if (week.includes('Searching')) return 'Binary Search';
+  return 'General';
+};
+
+const inferComplexity = (title) => {
+  const normalized = title.toLowerCase();
+  if (normalized.includes('binary search') || normalized.includes('rotated') || normalized.includes('kth')) {
+    return { time: 'O(log n) to O(n log n) depending on the approach', space: 'O(1) to O(n)' };
+  }
+  if (normalized.includes('tree') || normalized.includes('graph') || normalized.includes('island')) {
+    return { time: 'O(V + E) or O(n) traversal time', space: 'O(h) recursion stack or O(n) queue/set' };
+  }
+  if (normalized.includes('window') || normalized.includes('subarray') || normalized.includes('string')) {
+    return { time: 'O(n) sliding-window style', space: 'O(1) to O(k) hash map/set' };
+  }
+  if (normalized.includes('dp') || normalized.includes('path') || normalized.includes('subsequence')) {
+    return { time: 'Usually O(n) to O(n^2)', space: 'O(n) to O(n^2)' };
+  }
+  return { time: 'Typically O(n) or O(n log n)', space: 'O(1) to O(n)' };
+};
+
+const buildLeetCodeStyleDetails = (title, week, explanation) => {
+  const category = inferCategory(title, week);
+  const complexity = inferComplexity(title);
+
+  return `Problem
+Given the standard LeetCode prompt for "${title}", implement a correct and efficient Python solution.
+
+Category
+${category}
+
+What You Need To Do
+1. Parse the input based on the official LeetCode function signature.
+2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
+3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
+
+Approach Hint
+${explanation}
+
+Typical Constraints (Interview Scale)
+- Input size is often up to 10^5 for linear problems.
+- Expect strict time limits, so avoid brute force where possible.
+- Optimize for readability plus asymptotic efficiency.
+
+Complexity Target
+- Time: ${complexity.time}
+- Space: ${complexity.space}`;
+};
+
 const keywordPatterns = [
   {
     match: ['contains duplicate'],
@@ -67,6 +126,130 @@ class Solution:
                 return [lookup[want], i]
             lookup[num] = i
         return []`,
+  },
+  {
+    match: ['remove duplicates from sorted array'],
+    explanation: 'Two-pointer overwrite keeps unique values in-place.',
+    code: `from typing import List
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+        write = 1
+        for read in range(1, len(nums)):
+            if nums[read] != nums[write - 1]:
+                nums[write] = nums[read]
+                write += 1
+        return write`,
+  },
+  {
+    match: ['find the duplicate number'],
+    explanation: 'Floyd cycle detection treats values as next pointers.',
+    code: `from typing import List
+
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        slow = fast = nums[0]
+        while True:
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+            if slow == fast:
+                break
+        slow = nums[0]
+        while slow != fast:
+            slow = nums[slow]
+            fast = nums[fast]
+        return slow`,
+  },
+  {
+    match: ['majority element'],
+    explanation: 'Boyer-Moore voting tracks a candidate with constant space.',
+    code: `from typing import List
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        candidate = None
+        count = 0
+        for num in nums:
+            if count == 0:
+                candidate = num
+            count += 1 if num == candidate else -1
+        return candidate`,
+  },
+  {
+    match: ['next permutation'],
+    explanation: 'Find pivot, swap with next larger suffix element, then reverse suffix.',
+    code: `from typing import List
+
+class Solution:
+    def nextPermutation(self, nums: List[int]) -> None:
+        i = len(nums) - 2
+        while i >= 0 and nums[i] >= nums[i + 1]:
+            i -= 1
+        if i >= 0:
+            j = len(nums) - 1
+            while nums[j] <= nums[i]:
+                j -= 1
+            nums[i], nums[j] = nums[j], nums[i]
+        left, right = i + 1, len(nums) - 1
+        while left < right:
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1`,
+  },
+  {
+    match: ['sort colors'],
+    explanation: 'Dutch national flag partitions into 0/1/2 in one pass.',
+    code: `from typing import List
+
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        low = mid = 0
+        high = len(nums) - 1
+        while mid <= high:
+            if nums[mid] == 0:
+                nums[low], nums[mid] = nums[mid], nums[low]
+                low += 1
+                mid += 1
+            elif nums[mid] == 1:
+                mid += 1
+            else:
+                nums[mid], nums[high] = nums[high], nums[mid]
+                high -= 1`,
+  },
+  {
+    match: ['best time to buy and sell stock'],
+    explanation: 'Track the minimum price so far and max profit.',
+    code: `from typing import List
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_price = float('inf')
+        best = 0
+        for price in prices:
+            min_price = min(min_price, price)
+            best = max(best, price - min_price)
+        return best`,
+  },
+  {
+    match: ['longest consecutive sequence'],
+    explanation: 'Set lookup starts runs only at sequence starts for O(n).',
+    code: `from typing import List
+
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        values = set(nums)
+        best = 0
+        for num in values:
+            if num - 1 not in values:
+                current = num
+                length = 1
+                while current + 1 in values:
+                    current += 1
+                    length += 1
+                best = max(best, length)
+        return best`,
   },
   {
     match: ['maximum subarray'],
@@ -171,6 +354,41 @@ class Solution:
         return list(groups.values())`,
   },
   {
+    match: ['isomorphic strings'],
+    explanation: 'Bidirectional mapping ensures one-to-one character correspondence.',
+    code: `class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        m1, m2 = {}, {}
+        for a, b in zip(s, t):
+            if m1.get(a, b) != b or m2.get(b, a) != a:
+                return False
+            m1[a] = b
+            m2[b] = a
+        return True`,
+  },
+  {
+    match: ['reverse string'],
+    explanation: 'Two pointers swap characters in place.',
+    code: `from typing import List
+
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        left, right = 0, len(s) - 1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1`,
+  },
+  {
+    match: ['reverse words in a string'],
+    explanation: 'Split on whitespace, reverse list of words, and join.',
+    code: `class Solution:
+    def reverseWords(self, s: str) -> str:
+        return ' '.join(reversed(s.split()))`,
+  },
+  {
     match: ['valid palindrome ii'],
     explanation: 'Allow one deletion by checking both skip options at first mismatch.',
     code: `class Solution:
@@ -224,6 +442,72 @@ class Solution:
         return best`,
   },
   {
+    match: ['permutation in string'],
+    explanation: 'Fixed-size sliding window compares frequency counts.',
+    code: `from collections import Counter
+
+class Solution:
+    def checkInclusion(self, s1: str, s2: str) -> bool:
+        if len(s1) > len(s2):
+            return False
+        need = Counter(s1)
+        window = Counter(s2[:len(s1)])
+        if window == need:
+            return True
+        for i in range(len(s1), len(s2)):
+            window[s2[i]] += 1
+            left = s2[i - len(s1)]
+            window[left] -= 1
+            if window[left] == 0:
+                del window[left]
+            if window == need:
+                return True
+        return False`,
+  },
+  {
+    match: ['find all anagrams in a string'],
+    explanation: 'Slide a window of length p and compare character counts.',
+    code: `from collections import Counter
+from typing import List
+
+class Solution:
+    def findAnagrams(self, s: str, p: str) -> List[int]:
+        if len(p) > len(s):
+            return []
+        need = Counter(p)
+        window = Counter(s[:len(p)])
+        ans = [0] if window == need else []
+        for i in range(len(p), len(s)):
+            window[s[i]] += 1
+            left = s[i - len(p)]
+            window[left] -= 1
+            if window[left] == 0:
+                del window[left]
+            if window == need:
+                ans.append(i - len(p) + 1)
+        return ans`,
+  },
+  {
+    match: ['longest repeating character replacement'],
+    explanation: 'Window is valid while replacements needed are <= k.',
+    code: `from collections import defaultdict
+
+class Solution:
+    def characterReplacement(self, s: str, k: int) -> int:
+        count = defaultdict(int)
+        left = 0
+        max_freq = 0
+        best = 0
+        for right, ch in enumerate(s):
+            count[ch] += 1
+            max_freq = max(max_freq, count[ch])
+            while (right - left + 1) - max_freq > k:
+                count[s[left]] -= 1
+                left += 1
+            best = max(best, right - left + 1)
+        return best`,
+  },
+  {
     match: ['minimum window substring'],
     explanation: 'Expand and contract sliding window while maintaining required counts.',
     code: `from collections import Counter
@@ -266,6 +550,109 @@ class Solution:
         return not stack`,
   },
   {
+    match: ['decode string'],
+    explanation: 'Stack keeps previous string and repeat count at each bracket.',
+    code: `class Solution:
+    def decodeString(self, s: str) -> str:
+        stack = []
+        curr = ''
+        num = 0
+        for ch in s:
+            if ch.isdigit():
+                num = num * 10 + int(ch)
+            elif ch == '[':
+                stack.append((curr, num))
+                curr, num = '', 0
+            elif ch == ']':
+                prev, repeat = stack.pop()
+                curr = prev + curr * repeat
+            else:
+                curr += ch
+        return curr`,
+  },
+  {
+    match: ['implement strstr'],
+    explanation: 'Use Python find for concise O(n*m) worst-case behavior.',
+    code: `class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if needle == '':
+            return 0
+        return haystack.find(needle)`,
+  },
+  {
+    match: ['remove k digits'],
+    explanation: 'Monotonic stack removes larger preceding digits first.',
+    code: `class Solution:
+    def removeKdigits(self, num: str, k: int) -> str:
+        stack = []
+        for ch in num:
+            while k and stack and stack[-1] > ch:
+                stack.pop()
+                k -= 1
+            stack.append(ch)
+        while k:
+            stack.pop()
+            k -= 1
+        result = ''.join(stack).lstrip('0')
+        return result or '0'`,
+  },
+  {
+    match: ['basic calculator ii'],
+    explanation: 'Single pass with stack handles +, -, *, / precedence.',
+    code: `class Solution:
+    def calculate(self, s: str) -> int:
+        stack = []
+        num = 0
+        op = '+'
+        for ch in s + '+':
+            if ch.isdigit():
+                num = num * 10 + int(ch)
+            elif ch != ' ':
+                if op == '+':
+                    stack.append(num)
+                elif op == '-':
+                    stack.append(-num)
+                elif op == '*':
+                    stack[-1] *= num
+                else:
+                    stack[-1] = int(stack[-1] / num)
+                op = ch
+                num = 0
+        return sum(stack)`,
+  },
+  {
+    match: ['design add and search words data structure'],
+    explanation: 'Trie with DFS wildcard search supports dot matches.',
+    code: `class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.end = False
+
+
+class WordDictionary:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def addWord(self, word: str) -> None:
+        node = self.root
+        for ch in word:
+            node = node.children.setdefault(ch, TrieNode())
+        node.end = True
+
+    def search(self, word: str) -> bool:
+        def dfs(i: int, node: TrieNode) -> bool:
+            if i == len(word):
+                return node.end
+            ch = word[i]
+            if ch == '.':
+                return any(dfs(i + 1, child) for child in node.children.values())
+            if ch not in node.children:
+                return False
+            return dfs(i + 1, node.children[ch])
+
+        return dfs(0, self.root)`,
+  },
+  {
     match: ['binary search'],
     explanation: 'Classic low/high binary search over sorted array.',
     code: `from typing import List
@@ -282,6 +669,38 @@ class Solution:
             else:
                 right = mid - 1
         return -1`,
+  },
+  {
+    match: ['search insert position'],
+    explanation: 'Lower-bound binary search finds insertion index.',
+    code: `from typing import List
+
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        left, right = 0, len(nums)
+        while left < right:
+            mid = (left + right) // 2
+            if nums[mid] < target:
+                left = mid + 1
+            else:
+                right = mid
+        return left`,
+  },
+  {
+    match: ['find peak element'],
+    explanation: 'Binary search moves toward the rising slope.',
+    code: `from typing import List
+
+class Solution:
+    def findPeakElement(self, nums: List[int]) -> int:
+        left, right = 0, len(nums) - 1
+        while left < right:
+            mid = (left + right) // 2
+            if nums[mid] < nums[mid + 1]:
+                left = mid + 1
+            else:
+                right = mid
+        return left`,
   },
   {
     match: ['search in rotated sorted array'],
@@ -308,6 +727,47 @@ class Solution:
         return -1`,
   },
   {
+    match: ['find minimum in rotated sorted array'],
+    explanation: 'Binary search on pivot compares mid with right boundary.',
+    code: `from typing import List
+
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        left, right = 0, len(nums) - 1
+        while left < right:
+            mid = (left + right) // 2
+            if nums[mid] > nums[right]:
+                left = mid + 1
+            else:
+                right = mid
+        return nums[left]`,
+  },
+  {
+    match: ['time based key-value store'],
+    explanation: 'Store sorted timestamp-value pairs and binary search by timestamp.',
+    code: `from collections import defaultdict
+
+class TimeMap:
+    def __init__(self):
+        self.store = defaultdict(list)
+
+    def set(self, key: str, value: str, timestamp: int) -> None:
+        self.store[key].append((timestamp, value))
+
+    def get(self, key: str, timestamp: int) -> str:
+        arr = self.store.get(key, [])
+        left, right = 0, len(arr) - 1
+        ans = ''
+        while left <= right:
+            mid = (left + right) // 2
+            if arr[mid][0] <= timestamp:
+                ans = arr[mid][1]
+                left = mid + 1
+            else:
+                right = mid - 1
+        return ans`,
+  },
+  {
     match: ['reverse linked list'],
     explanation: 'Iteratively redirect pointers using prev/curr traversal.',
     code: `# class ListNode:
@@ -325,6 +785,145 @@ class Solution:
             prev = curr
             curr = nxt
         return prev`,
+  },
+  {
+    match: ['merge two sorted lists'],
+    explanation: 'Iterative merge with a dummy head pointer.',
+    code: `class Solution:
+    def mergeTwoLists(self, list1, list2):
+        dummy = tail = ListNode()
+        while list1 and list2:
+            if list1.val <= list2.val:
+                tail.next = list1
+                list1 = list1.next
+            else:
+                tail.next = list2
+                list2 = list2.next
+            tail = tail.next
+        tail.next = list1 or list2
+        return dummy.next`,
+  },
+  {
+    match: ['remove nth node from end of list'],
+    explanation: 'Fast/slow pointers keep n-node gap to remove target node.',
+    code: `class Solution:
+    def removeNthFromEnd(self, head, n: int):
+        dummy = ListNode(0, head)
+        fast = slow = dummy
+        for _ in range(n):
+            fast = fast.next
+        while fast.next:
+            fast = fast.next
+            slow = slow.next
+        slow.next = slow.next.next
+        return dummy.next`,
+  },
+  {
+    match: ['add two numbers'],
+    explanation: 'Digit-by-digit addition with carry on linked lists.',
+    code: `class Solution:
+    def addTwoNumbers(self, l1, l2):
+        dummy = tail = ListNode()
+        carry = 0
+        while l1 or l2 or carry:
+            v1 = l1.val if l1 else 0
+            v2 = l2.val if l2 else 0
+            carry, digit = divmod(v1 + v2 + carry, 10)
+            tail.next = ListNode(digit)
+            tail = tail.next
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+        return dummy.next`,
+  },
+  {
+    match: ['reorder list'],
+    explanation: 'Find middle, reverse second half, then merge alternately.',
+    code: `class Solution:
+    def reorderList(self, head) -> None:
+        if not head or not head.next:
+            return
+        slow = fast = head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+
+        prev, curr = None, slow.next
+        slow.next = None
+        while curr:
+            nxt = curr.next
+            curr.next = prev
+            prev = curr
+            curr = nxt
+
+        first, second = head, prev
+        while second:
+            n1, n2 = first.next, second.next
+            first.next = second
+            second.next = n1
+            first, second = n1, n2`,
+  },
+  {
+    match: ['copy list with random pointer'],
+    explanation: 'Hash map clone pass + pointer wiring pass.',
+    code: `class Solution:
+    def copyRandomList(self, head):
+        if not head:
+            return None
+        copies = {}
+        curr = head
+        while curr:
+            copies[curr] = Node(curr.val)
+            curr = curr.next
+        curr = head
+        while curr:
+            copies[curr].next = copies.get(curr.next)
+            copies[curr].random = copies.get(curr.random)
+            curr = curr.next
+        return copies[head]`,
+  },
+  {
+    match: ['merge k sorted lists'],
+    explanation: 'Min-heap always extracts the current smallest node.',
+    code: `import heapq
+
+class Solution:
+    def mergeKLists(self, lists):
+        heap = []
+        for i, node in enumerate(lists):
+            if node:
+                heapq.heappush(heap, (node.val, i, node))
+
+        dummy = tail = ListNode()
+        while heap:
+            _, i, node = heapq.heappop(heap)
+            tail.next = node
+            tail = tail.next
+            if node.next:
+                heapq.heappush(heap, (node.next.val, i, node.next))
+        return dummy.next`,
+  },
+  {
+    match: ['lru cache'],
+    explanation: 'OrderedDict gives O(1) get/put with recency updates.',
+    code: `from collections import OrderedDict
+
+class LRUCache:
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.cache = OrderedDict()
+
+    def get(self, key: int) -> int:
+        if key not in self.cache:
+            return -1
+        self.cache.move_to_end(key)
+        return self.cache[key]
+
+    def put(self, key: int, value: int) -> None:
+        if key in self.cache:
+            self.cache.move_to_end(key)
+        self.cache[key] = value
+        if len(self.cache) > self.capacity:
+            self.cache.popitem(last=False)`,
   },
   {
     match: ['linked list cycle ii'],
@@ -395,6 +994,123 @@ class Solution:
                 ans[prev] = i - prev
             stack.append(i)
         return ans`,
+  },
+  {
+    match: ['evaluate reverse polish notation'],
+    explanation: 'Stack evaluates each token using last two operands.',
+    code: `from typing import List
+
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        stack = []
+        for token in tokens:
+            if token in {'+', '-', '*', '/'}:
+                b = stack.pop()
+                a = stack.pop()
+                if token == '+':
+                    stack.append(a + b)
+                elif token == '-':
+                    stack.append(a - b)
+                elif token == '*':
+                    stack.append(a * b)
+                else:
+                    stack.append(int(a / b))
+            else:
+                stack.append(int(token))
+        return stack[-1]`,
+  },
+  {
+    match: ['next greater element i'],
+    explanation: 'Monotonic decreasing stack builds next-greater map.',
+    code: `from typing import List
+
+class Solution:
+    def nextGreaterElement(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        stack = []
+        nxt = {}
+        for num in nums2:
+            while stack and stack[-1] < num:
+                nxt[stack.pop()] = num
+            stack.append(num)
+        return [nxt.get(num, -1) for num in nums1]`,
+  },
+  {
+    match: ['next greater element ii'],
+    explanation: 'Circular scan with monotonic stack and modulo indices.',
+    code: `from typing import List
+
+class Solution:
+    def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        ans = [-1] * n
+        stack = []
+        for i in range(2 * n):
+            while stack and nums[stack[-1]] < nums[i % n]:
+                ans[stack.pop()] = nums[i % n]
+            if i < n:
+                stack.append(i)
+        return ans`,
+  },
+  {
+    match: ['stock span problem'],
+    explanation: 'Monotonic stack stores (price, span) pairs for O(1) amortized next.',
+    code: `class StockSpanner:
+    def __init__(self):
+        self.stack = []
+
+    def next(self, price: int) -> int:
+        span = 1
+        while self.stack and self.stack[-1][0] <= price:
+            span += self.stack.pop()[1]
+        self.stack.append((price, span))
+        return span`,
+  },
+  {
+    match: ['minimum add to make parentheses valid'],
+    explanation: 'Track balance and required insertions for unmatched closes.',
+    code: `class Solution:
+    def minAddToMakeValid(self, s: str) -> int:
+        balance = 0
+        add = 0
+        for ch in s:
+            if ch == '(':
+                balance += 1
+            elif balance == 0:
+                add += 1
+            else:
+                balance -= 1
+        return add + balance`,
+  },
+  {
+    match: ['insert delete getrandom o(1)'],
+    explanation: 'Array + hash index map supports O(1) insert/delete/random.',
+    code: `import random
+
+class RandomizedSet:
+    def __init__(self):
+        self.values = []
+        self.index = {}
+
+    def insert(self, val: int) -> bool:
+        if val in self.index:
+            return False
+        self.index[val] = len(self.values)
+        self.values.append(val)
+        return True
+
+    def remove(self, val: int) -> bool:
+        if val not in self.index:
+            return False
+        i = self.index[val]
+        last = self.values[-1]
+        self.values[i] = last
+        self.index[last] = i
+        self.values.pop()
+        del self.index[val]
+        return True
+
+    def getRandom(self) -> int:
+        return random.choice(self.values)`,
   },
   {
     match: ['sliding window maximum'],
@@ -566,6 +1282,31 @@ class Solution:
         return dfs(root, float('-inf'), float('inf'))`,
   },
   {
+    match: ['same tree'],
+    explanation: 'DFS compares structure and value equality recursively.',
+    code: `class Solution:
+    def isSameTree(self, p, q) -> bool:
+        if not p and not q:
+            return True
+        if not p or not q or p.val != q.val:
+            return False
+        return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)`,
+  },
+  {
+    match: ['symmetric tree'],
+    explanation: 'Mirror recursion compares left subtree vs right subtree.',
+    code: `class Solution:
+    def isSymmetric(self, root) -> bool:
+        def mirror(a, b):
+            if not a and not b:
+                return True
+            if not a or not b or a.val != b.val:
+                return False
+            return mirror(a.left, b.right) and mirror(a.right, b.left)
+
+        return mirror(root.left, root.right) if root else True`,
+  },
+  {
     match: ['lowest common ancestor of a binary tree'],
     explanation: 'Postorder recursion returns node when split across subtrees.',
     code: `class Solution:
@@ -579,6 +1320,47 @@ class Solution:
         if left and right:
             return root
         return left or right`,
+  },
+  {
+    match: ['populating next right pointers in each node'],
+    explanation: 'Level-order traversal connects nodes from left to right per level.',
+    code: `from collections import deque
+
+class Solution:
+    def connect(self, root):
+        if not root:
+            return None
+        q = deque([root])
+        while q:
+            prev = None
+            for _ in range(len(q)):
+                node = q.popleft()
+                if prev:
+                    prev.next = node
+                prev = node
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        return root`,
+  },
+  {
+    match: ['subtree of another tree'],
+    explanation: 'Check each node as potential match using same-tree helper.',
+    code: `class Solution:
+    def isSubtree(self, root, subRoot) -> bool:
+        def same(a, b):
+            if not a and not b:
+                return True
+            if not a or not b or a.val != b.val:
+                return False
+            return same(a.left, b.left) and same(a.right, b.right)
+
+        if not root:
+            return False
+        if same(root, subRoot):
+            return True
+        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)`,
   },
   {
     match: ['implement trie'],
@@ -711,6 +1493,27 @@ class Solution:
         return heap[0]`,
   },
   {
+    match: ['kth largest element in a stream'],
+    explanation: 'Maintain a min-heap of size k; top is current kth largest.',
+    code: `import heapq
+from typing import List
+
+class KthLargest:
+    def __init__(self, k: int, nums: List[int]):
+        self.k = k
+        self.heap = nums[:]
+        heapq.heapify(self.heap)
+        while len(self.heap) > k:
+            heapq.heappop(self.heap)
+
+    def add(self, val: int) -> int:
+        if len(self.heap) < self.k:
+            heapq.heappush(self.heap, val)
+        elif val > self.heap[0]:
+            heapq.heapreplace(self.heap, val)
+        return self.heap[0]`,
+  },
+  {
     match: ['top k frequent elements'],
     explanation: 'Count then return top-k by frequency.',
     code: `from collections import Counter
@@ -719,6 +1522,157 @@ from typing import List
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         return [num for num, _ in Counter(nums).most_common(k)]`,
+  },
+  {
+    match: ['last stone weight'],
+    explanation: 'Max-heap (via negatives) repeatedly smashes two largest stones.',
+    code: `import heapq
+from typing import List
+
+class Solution:
+    def lastStoneWeight(self, stones: List[int]) -> int:
+        heap = [-s for s in stones]
+        heapq.heapify(heap)
+        while len(heap) > 1:
+            a = -heapq.heappop(heap)
+            b = -heapq.heappop(heap)
+            if a != b:
+                heapq.heappush(heap, -(a - b))
+        return -heap[0] if heap else 0`,
+  },
+  {
+    match: ['k closest points to origin'],
+    explanation: 'Keep k points with smallest squared distance using heap.',
+    code: `import heapq
+from typing import List
+
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        return heapq.nsmallest(k, points, key=lambda p: p[0] * p[0] + p[1] * p[1])`,
+  },
+  {
+    match: ['top k frequent words'],
+    explanation: 'Count words and sort by frequency desc then lexicographic asc.',
+    code: `from collections import Counter
+from typing import List
+
+class Solution:
+    def topKFrequent(self, words: List[str], k: int) -> List[str]:
+        counts = Counter(words)
+        return sorted(counts, key=lambda w: (-counts[w], w))[:k]`,
+  },
+  {
+    match: ['task scheduler'],
+    explanation: 'Greedy idle-slot formula based on most frequent task count.',
+    code: `from collections import Counter
+from typing import List
+
+class Solution:
+    def leastInterval(self, tasks: List[str], n: int) -> int:
+        freq = Counter(tasks).values()
+        max_freq = max(freq)
+        max_count = sum(1 for x in freq if x == max_freq)
+        return max(len(tasks), (max_freq - 1) * (n + 1) + max_count)`,
+  },
+  {
+    match: ['design twitter'],
+    explanation: 'Store tweets per user and merge feeds from followees via heap.',
+    code: `import heapq
+from collections import defaultdict
+from typing import List
+
+class Twitter:
+    def __init__(self):
+        self.time = 0
+        self.tweets = defaultdict(list)
+        self.following = defaultdict(set)
+
+    def postTweet(self, userId: int, tweetId: int) -> None:
+        self.time += 1
+        self.tweets[userId].append((self.time, tweetId))
+
+    def getNewsFeed(self, userId: int) -> List[int]:
+        self.following[userId].add(userId)
+        heap = []
+        for uid in self.following[userId]:
+            arr = self.tweets[uid]
+            if arr:
+                idx = len(arr) - 1
+                time, tid = arr[idx]
+                heapq.heappush(heap, (-time, tid, uid, idx - 1))
+        out = []
+        while heap and len(out) < 10:
+            _, tid, uid, idx = heapq.heappop(heap)
+            out.append(tid)
+            if idx >= 0:
+                time, tid = self.tweets[uid][idx]
+                heapq.heappush(heap, (-time, tid, uid, idx - 1))
+        return out
+
+    def follow(self, followerId: int, followeeId: int) -> None:
+        self.following[followerId].add(followeeId)
+
+    def unfollow(self, followerId: int, followeeId: int) -> None:
+        if followeeId != followerId:
+            self.following[followerId].discard(followeeId)`,
+  },
+  {
+    match: ['reorganize string'],
+    explanation: 'Max-heap greedily places most frequent characters without adjacency clash.',
+    code: `import heapq
+from collections import Counter
+
+class Solution:
+    def reorganizeString(self, s: str) -> str:
+        freq = Counter(s)
+        heap = [(-cnt, ch) for ch, cnt in freq.items()]
+        heapq.heapify(heap)
+        prev_cnt, prev_ch = 0, ''
+        out = []
+        while heap:
+            cnt, ch = heapq.heappop(heap)
+            out.append(ch)
+            cnt += 1
+            if prev_cnt < 0:
+                heapq.heappush(heap, (prev_cnt, prev_ch))
+            prev_cnt, prev_ch = cnt, ch
+        result = ''.join(out)
+        return result if len(result) == len(s) else ''`,
+  },
+  {
+    match: ['meeting rooms ii'],
+    explanation: 'Sort intervals and track ongoing meetings with min-heap of end times.',
+    code: `import heapq
+from typing import List
+
+class Solution:
+    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        intervals.sort()
+        heap = []
+        for start, end in intervals:
+            if heap and heap[0] <= start:
+                heapq.heapreplace(heap, end)
+            else:
+                heapq.heappush(heap, end)
+        return len(heap)`,
+  },
+  {
+    match: ['minimum cost to connect sticks'],
+    explanation: 'Always combine two smallest sticks first (Huffman-style greedy).',
+    code: `import heapq
+from typing import List
+
+class Solution:
+    def connectSticks(self, sticks: List[int]) -> int:
+        heapq.heapify(sticks)
+        cost = 0
+        while len(sticks) > 1:
+            a = heapq.heappop(sticks)
+            b = heapq.heappop(sticks)
+            total = a + b
+            cost += total
+            heapq.heappush(sticks, total)
+        return cost`,
   },
   {
     match: ['find median from data stream'],
@@ -1206,8 +2160,8 @@ const makeFallback = (title) => {
   const safeTitle = title.replace(/'/g, "\\'");
   return {
     explanation:
-      'Reference Python skeleton: plug in the exact LeetCode signature and apply the standard pattern for this problem.',
-    code: `# ${safeTitle}\n# This is a Python-only starter/reference skeleton for this question.\n# Replace method signature to match LeetCode's exact prompt.\n\nclass Solution:\n    def solve(self, *args, **kwargs):\n        # TODO: Implement using the standard approach for this problem.\n        raise NotImplementedError('Implement ${safeTitle}')`,
+      'Python starter with an implementation checklist. Replace `solve` with the exact LeetCode function signature and complete the marked steps.',
+    code: `# ${safeTitle}\n# Replace the method signature with the exact LeetCode signature.\n# 1) Identify the right pattern (two pointers / heap / DP / graph / stack)\n# 2) Handle edge cases first\n# 3) Keep time and space within interview constraints\n\nclass Solution:\n    def solve(self, *args, **kwargs):\n        # TODO: Implement ${safeTitle}\n        return None`,
   };
 };
 
@@ -1289,6 +2243,7 @@ for (const rawLine of lines) {
   questionOrder += 1;
   const id = `${weekOrder}-${questionOrder}`;
   const answer = getAnswer(line);
+  const details = buildLeetCodeStyleDetails(line, currentWeek, answer.explanation);
 
   questions.push({
     id,
@@ -1299,6 +2254,7 @@ for (const rawLine of lines) {
     slug: `${toSlug(line)}-${id}`,
     pythonAnswer: answer.code,
     explanation: answer.explanation,
+    details,
     starterCode: `# ${line}\n# Write your Python solution below and run with custom input in Playground.\n\nclass Solution:\n    def solve(self, *args, **kwargs):\n        pass`,
   });
 }
@@ -1314,6 +2270,7 @@ export type QuestionItem = {
   questionOrder: number;
   slug: string;
   explanation: string;
+  details: string;
   pythonAnswer: string;
   starterCode: string;
 };
@@ -1333,6 +2290,7 @@ ${questions
     questionOrder: ${q.questionOrder},
     slug: \`${escapeTs(q.slug)}\`,
     explanation: \`${escapeTs(q.explanation)}\`,
+    details: \`${escapeTs(q.details)}\`,
     pythonAnswer: \`${escapeTs(q.pythonAnswer)}\`,
     starterCode: \`${escapeTs(q.starterCode)}\`,
   },`

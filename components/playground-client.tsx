@@ -84,6 +84,7 @@ export default function PlaygroundClient() {
           </header>
           <div className="card-body">
             <p className="helper">{question.explanation}</p>
+            <div className="details-text">{question.details}</div>
           </div>
         </article>
       </section>

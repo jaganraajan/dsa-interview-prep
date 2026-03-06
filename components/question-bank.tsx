@@ -99,6 +99,7 @@ export default function QuestionBank() {
               {open ? (
                 <div className="card-body">
                   <p className="helper">{item.explanation}</p>
+                  <div className="details-text">{item.details}</div>
                   <pre>{item.pythonAnswer}</pre>
                 </div>
               ) : null}

@@ -185,6 +185,18 @@ textarea.io {
   margin: 0;
 }
 
+.details-text {
+  margin: 10px 0 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e6e3d7;
+  background: #faf9f5;
+  color: #353535;
+  font-size: 0.83rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
 @media (max-width: 900px) {
   .controls {
     grid-template-columns: 1fr;
