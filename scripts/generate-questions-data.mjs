@@ -51,7 +51,7 @@ const inferComplexity = (title) => {
   return { time: 'Typically O(n) or O(n log n)', space: 'O(1) to O(n)' };
 };
 
-const buildLeetCodeStyleDetails = (title, week, explanation) => {
+const buildLeetCodeStyleDetails = (title, week) => {
   const category = inferCategory(title, week);
   const complexity = inferComplexity(title);
 
@@ -65,9 +65,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-${explanation}
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2243,7 +2240,7 @@ for (const rawLine of lines) {
   questionOrder += 1;
   const id = `${weekOrder}-${questionOrder}`;
   const answer = getAnswer(line);
-  const details = buildLeetCodeStyleDetails(line, currentWeek, answer.explanation);
+  const details = buildLeetCodeStyleDetails(line, currentWeek);
 
   questions.push({
     id,

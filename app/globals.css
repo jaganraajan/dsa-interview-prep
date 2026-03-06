@@ -185,6 +185,19 @@ textarea.io {
   margin: 0;
 }
 
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-toggle {
+  min-width: 42px;
+  padding: 8px 10px;
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .details-text {
   margin: 10px 0 12px;
   padding: 10px 12px;

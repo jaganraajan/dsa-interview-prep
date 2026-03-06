@@ -7,7 +7,8 @@ import { QUESTIONS, WEEK_NAMES } from '@/lib/questions';
 export default function QuestionBank() {
   const [query, setQuery] = useState('');
   const [week, setWeek] = useState('ALL');
-  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+  const [expandedAnswers, setExpandedAnswers] = useState<Set<string>>(new Set());
+  const [expandedDescriptions, setExpandedDescriptions] = useState<Set<string>>(new Set());
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -22,8 +23,20 @@ export default function QuestionBank() {
     });
   }, [query, week]);
 
-  const toggle = (id: string) => {
-    setExpanded((prev) => {
+  const toggleAnswer = (id: string) => {
+    setExpandedAnswers((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  };
+
+  const toggleDescription = (id: string) => {
+    setExpandedDescriptions((prev) => {
       const next = new Set(prev);
       if (next.has(id)) {
         next.delete(id);
@@ -74,7 +87,8 @@ export default function QuestionBank() {
           onClick={() => {
             setQuery('');
             setWeek('ALL');
-            setExpanded(new Set());
+            setExpandedAnswers(new Set());
+            setExpandedDescriptions(new Set());
           }}
         >
           Reset
@@ -83,7 +97,8 @@ export default function QuestionBank() {
 
       <section className="grid" aria-label="Python solution list">
         {filtered.map((item) => {
-          const open = expanded.has(item.id);
+          const answerOpen = expandedAnswers.has(item.id);
+          const descriptionOpen = expandedDescriptions.has(item.id);
           return (
             <article key={item.slug} className="card">
               <header className="card-head">
@@ -91,16 +106,31 @@ export default function QuestionBank() {
                   <h3>{item.title}</h3>
                   <div className="card-meta">{item.week}</div>
                 </div>
-                <button type="button" onClick={() => toggle(item.id)}>
-                  {open ? 'Hide Python Answer' : 'Show Python Answer'}
-                </button>
+                <div className="card-actions">
+                  <button type="button" onClick={() => toggleAnswer(item.id)}>
+                    {answerOpen ? 'Hide Python Answer' : 'Show Python Answer'}
+                  </button>
+                  <button
+                    type="button"
+                    className="secondary icon-toggle"
+                    aria-label={descriptionOpen ? 'Collapse Description' : 'Expand Description'}
+                    title={descriptionOpen ? 'Collapse Description' : 'Expand Description'}
+                    onClick={() => toggleDescription(item.id)}
+                  >
+                    {descriptionOpen ? '▾' : '▸'}
+                  </button>
+                </div>
               </header>
 
-              {open ? (
+              {descriptionOpen || answerOpen ? (
                 <div className="card-body">
-                  <p className="helper">{item.explanation}</p>
-                  <div className="details-text">{item.details}</div>
-                  <pre>{item.pythonAnswer}</pre>
+                  {descriptionOpen ? (
+                    <>
+                      <p className="helper">{item.explanation}</p>
+                      <div className="details-text">{item.details}</div>
+                    </>
+                  ) : null}
+                  {answerOpen ? <pre>{item.pythonAnswer}</pre> : null}
                 </div>
               ) : null}
             </article>

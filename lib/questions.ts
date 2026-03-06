@@ -46,9 +46,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Use a set to track seen values while scanning once.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -92,9 +89,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Two-pointer overwrite keeps unique values in-place.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -141,9 +135,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Floyd cycle detection treats values as next pointers.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -194,9 +185,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Hash map stores needed complement indices in O(n).
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -241,9 +229,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Two pointers on sorted input locate the target in linear time.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -293,9 +278,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -339,9 +321,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Boyer-Moore voting tracks a candidate with constant space.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -388,9 +367,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Kadane algorithm tracks the best subarray ending at each index.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -434,9 +410,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -488,9 +461,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -540,9 +510,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -594,9 +561,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -647,9 +611,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Track both max and min products because negatives can swap roles.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -696,9 +657,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -749,9 +707,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Sort and fix one value; two pointers find complementary pairs.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -814,9 +769,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Two pointers shrink from ends while preserving max area.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -864,9 +816,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Find pivot, swap with next larger suffix element, then reverse suffix.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -919,9 +868,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Dutch national flag partitions into 0/1/2 in one pass.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -972,9 +918,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1018,9 +961,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Grid traversal reference pattern with boundary checks and visited marking.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1072,9 +1012,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Grid traversal reference pattern with boundary checks and visited marking.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1125,9 +1062,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1171,9 +1105,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1219,9 +1150,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Track the minimum price so far and max profit.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1266,9 +1194,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1312,9 +1237,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Deque stores candidate indices in decreasing value order.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1368,9 +1290,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Set lookup starts runs only at sequence starts for O(n).
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1420,9 +1339,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Character counts must match exactly for both strings.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1461,9 +1377,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Bidirectional mapping ensures one-to-one character correspondence.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1510,9 +1423,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Use sorted-character signature as the grouping key.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1555,9 +1465,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Two-pointer scan over alphanumeric lowercased characters.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1606,9 +1513,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Two pointers swap characters in place.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1652,9 +1556,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Split on whitespace, reverse list of words, and join.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1691,9 +1592,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Allow one deletion by checking both skip options at first mismatch.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1745,9 +1643,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1801,9 +1696,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Sliding window tracks last index of each character.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1848,9 +1740,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Expand and contract sliding window while maintaining required counts.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -1910,9 +1799,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Fixed-size sliding window compares frequency counts.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -1965,9 +1851,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Slide a window of length p and compare character counts.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2022,9 +1905,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Window is valid while replacements needed are <= k.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2074,9 +1954,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2130,9 +2007,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Stack stores expected closing brackets in sequence.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2177,9 +2051,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2223,9 +2094,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Stack keeps previous string and repeat count at each bracket.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2278,9 +2146,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Use Python find for concise O(n*m) worst-case behavior.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2319,9 +2184,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2366,9 +2228,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Monotonic stack removes larger preceding digits first.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2417,9 +2276,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2463,9 +2319,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Single pass with stack handles +, -, *, / precedence.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2520,9 +2373,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Trie with DFS wildcard search supports dot matches.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2586,9 +2436,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Classic low/high binary search over sorted array.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2637,9 +2484,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Binary search moves toward the rising slope.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2686,9 +2530,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Lower-bound binary search finds insertion index.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2734,9 +2575,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-At each step, one side is sorted; keep target in sorted side.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2792,9 +2630,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Binary search on pivot compares mid with right boundary.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2841,9 +2676,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2887,9 +2719,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Grid traversal reference pattern with boundary checks and visited marking.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -2941,9 +2770,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Grid traversal reference pattern with boundary checks and visited marking.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -2993,9 +2819,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Store sorted timestamp-value pairs and binary search by timestamp.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3052,9 +2875,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3098,9 +2918,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3146,9 +2963,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3192,9 +3006,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3240,9 +3051,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3286,9 +3094,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3334,9 +3139,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3380,9 +3182,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3428,9 +3227,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3474,9 +3270,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3522,9 +3315,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3568,9 +3358,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Iteratively redirect pointers using prev/curr traversal.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3621,9 +3408,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Two-pointer linked-list reference pattern; adapt pointer logic for the exact objective.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3665,9 +3449,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Iterative merge with a dummy head pointer.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3716,9 +3497,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Fast/slow pointers keep n-node gap to remove target node.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3764,9 +3542,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Two-pointer linked-list reference pattern; adapt pointer logic for the exact objective.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3808,9 +3583,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Two-pointer linked-list reference pattern; adapt pointer logic for the exact objective.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3854,9 +3626,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Floyd tortoise-hare detects a cycle in O(1) space.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3899,9 +3668,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Floyd cycle detection finds meeting point and cycle entry.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -3953,9 +3719,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Two-pointer linked-list reference pattern; adapt pointer logic for the exact objective.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -3997,9 +3760,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Digit-by-digit addition with carry on linked lists.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4047,9 +3807,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Find middle, reverse second half, then merge alternately.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4108,9 +3865,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4154,9 +3908,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Iteratively redirect pointers using prev/curr traversal.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4207,9 +3958,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4253,9 +4001,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Hash map clone pass + pointer wiring pass.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4305,9 +4050,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-OrderedDict gives O(1) get/put with recency updates.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4362,9 +4104,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4408,9 +4147,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Min-heap always extracts the current smallest node.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4463,9 +4199,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Floyd cycle detection treats values as next pointers.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4514,9 +4247,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4570,9 +4300,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Store pairs of value and minimum-so-far on stack.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4623,9 +4350,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4669,9 +4393,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Stack stores expected closing brackets in sequence.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4717,9 +4438,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4763,9 +4481,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Stack evaluates each token using last two operands.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4821,9 +4536,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Monotonic decreasing stack gives next warmer day index.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4871,9 +4583,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Monotonic decreasing stack builds next-greater map.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -4918,9 +4627,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Monotonic decreasing stack builds next-greater map.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -4967,9 +4673,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5014,9 +4717,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Monotonic stack stores (price, span) pairs for O(1) amortized next.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5060,9 +4760,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Deque stores candidate indices in decreasing value order.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5116,9 +4813,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5168,9 +4862,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5222,9 +4913,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Monotonic stack computes max rectangle with each bar as min height.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5274,9 +4962,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Two pointers maintain max left/right boundaries and trapped water.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5331,9 +5016,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Track balance and required insertions for unmatched closes.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5379,9 +5061,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Monotonic stack removes larger preceding digits first.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5429,9 +5108,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Stack keeps previous string and repeat count at each bracket.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5484,9 +5160,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Dynamic programming reference template with memo/iterative transitions.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5533,9 +5206,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-OrderedDict gives O(1) get/put with recency updates.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5590,9 +5260,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5636,9 +5303,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Array + hash index map supports O(1) insert/delete/random.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5701,9 +5365,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Recursive DFS visits left-root-right.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5759,9 +5420,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Recursive DFS visits root-left-right.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5811,9 +5469,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Recursive DFS visits left-right-root.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5862,9 +5517,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-BFS with queue processes nodes level by level.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -5923,9 +5575,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-BFS with queue processes nodes level by level.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -5983,9 +5632,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6037,9 +5683,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6093,9 +5736,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6147,9 +5787,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6203,9 +5840,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6257,9 +5891,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6313,9 +5944,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6367,9 +5995,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6423,9 +6048,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Classic low/high binary search over sorted array.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6473,9 +6095,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6529,9 +6148,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-DFS compares structure and value equality recursively.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6572,9 +6188,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Mirror recursion compares left subtree vs right subtree.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6619,9 +6232,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6675,9 +6285,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Postorder recursion returns node when split across subtrees.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6722,9 +6329,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Classic low/high binary search over sorted array.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6774,9 +6378,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Classic low/high binary search over sorted array.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6824,9 +6425,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Recursive DFS visits left-root-right.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -6883,9 +6481,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Recursive DFS visits left-right-root.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6935,9 +6530,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Classic low/high binary search over sorted array.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -6985,9 +6577,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -7041,9 +6630,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7096,9 +6682,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7150,9 +6733,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Level-order traversal connects nodes from left to right per level.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -7207,9 +6787,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7253,9 +6830,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -7309,9 +6883,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Maintain a min-heap of size k; top is current kth largest.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7363,9 +6934,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Classic low/high binary search over sorted array.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7413,9 +6981,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -7469,9 +7034,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Check each node as potential match using same-tree helper.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7519,9 +7081,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -7575,9 +7134,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7622,9 +7178,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7668,9 +7221,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Nested dict nodes store children and end-of-word marker.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -7737,9 +7287,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Trie with DFS wildcard search supports dot matches.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7802,9 +7349,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Backtracking DFS with visited marking finds word path.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -7866,9 +7410,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Build trie + DFS backtracking with pruning.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -7948,9 +7489,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8002,9 +7540,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8058,9 +7593,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Min-heap of size k keeps current k largest values.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8105,9 +7637,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Maintain a min-heap of size k; top is current kth largest.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8160,9 +7689,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Max-heap (via negatives) repeatedly smashes two largest stones.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8210,9 +7736,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Keep k points with smallest squared distance using heap.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8252,9 +7775,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Count then return top-k by frequency.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8296,9 +7816,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Count words and sort by frequency desc then lexicographic asc.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8339,9 +7856,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8387,9 +7901,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8434,9 +7945,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Greedy idle-slot formula based on most frequent task count.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8479,9 +7987,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Store tweets per user and merge feeds from followees via heap.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8555,9 +8060,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Max-heap greedily places most frequent characters without adjacency clash.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8611,9 +8113,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8657,9 +8156,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Two heaps balance lower and upper halves.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8712,9 +8208,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Sliding window / prefix-sum reference pattern for contiguous range problems.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8764,9 +8257,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Deque stores candidate indices in decreasing value order.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8820,9 +8310,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8866,9 +8353,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-OrderedDict gives O(1) get/put with recency updates.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -8923,9 +8407,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -8969,9 +8450,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Min-heap always extracts the current smallest node.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9024,9 +8502,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9070,9 +8545,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Sort intervals and track ongoing meetings with min-heap of end times.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9120,9 +8592,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Always combine two smallest sticks first (Huffman-style greedy).
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9172,9 +8641,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9219,9 +8685,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9265,9 +8728,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Graph traversal reference pattern (BFS/DFS) with visited tracking.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9324,9 +8784,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Graph traversal reference pattern (BFS/DFS) with visited tracking.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9381,9 +8838,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Kahn BFS topological sort detects whether all nodes can be completed.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9443,9 +8897,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9489,9 +8940,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Topological sort via indegree and BFS queue.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9551,9 +8999,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-DFS flood-fill each unvisited land cell and count components.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9610,9 +9055,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Graph traversal reference pattern (BFS/DFS) with visited tracking.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9667,9 +9109,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Graph traversal reference pattern (BFS/DFS) with visited tracking.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9726,9 +9165,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9772,9 +9208,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9820,9 +9253,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9867,9 +9297,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -9913,9 +9340,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Graph traversal reference pattern (BFS/DFS) with visited tracking.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -9971,9 +9395,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-BFS by single-letter transformations gives shortest path length.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10032,9 +9453,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-BFS layers for distances + DFS backtracking for all shortest paths.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10106,9 +9524,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-DFS with hashmap copies each node once and reconnects neighbors.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10160,9 +9575,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10206,9 +9618,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Priority queue always expands the currently shortest known distance.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10268,9 +9677,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10314,9 +9720,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10362,9 +9765,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Fibonacci-style DP with O(1) space.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10407,9 +9807,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Fibonacci-style DP with O(1) space.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10451,9 +9848,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Greedy keep the farthest reachable index while scanning.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10498,9 +9892,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Greedy range expansion tracks minimum jumps per layer.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10551,9 +9942,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-1D DP where dp[x] is minimum coins to make sum x.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10601,9 +9989,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-1D DP counts combinations with each coin used in forward order.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10648,9 +10033,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-At each house choose rob or skip using rolling DP.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10692,9 +10074,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Solve two linear rob passes (exclude first or exclude last).
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10744,9 +10123,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10791,9 +10167,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10837,9 +10210,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-DP counts decodings from each index with 1- or 2-digit transitions.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10889,9 +10259,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-DP over string indices checks dictionary word endings.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -10940,9 +10307,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Memoized DFS builds all valid sentence decompositions.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -10998,9 +10362,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Patience sorting with binary search gives O(n log n).
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11048,9 +10409,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Track both max and min products because negatives can swap roles.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11097,9 +10455,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -11153,9 +10508,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Tree DFS/BFS reference pattern; adapt traversal/order/constraint to the exact prompt.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11208,9 +10560,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Dynamic programming reference template with memo/iterative transitions.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11257,9 +10606,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Dynamic programming reference template with memo/iterative transitions.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -11308,9 +10654,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Dynamic programming reference template with memo/iterative transitions.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11358,9 +10701,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11404,9 +10744,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Subset-sum DP tracks reachable sums up to target/2.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -11456,9 +10793,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Dynamic programming reference template with memo/iterative transitions.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11505,9 +10839,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Dynamic programming reference template with memo/iterative transitions.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -11556,9 +10887,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-2D DP combines match and skip transitions.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11605,9 +10933,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Classic dynamic programming for insert/delete/replace transitions.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -11661,9 +10986,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11708,9 +11030,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11754,9 +11073,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Grid traversal reference pattern with boundary checks and visited marking.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -11808,9 +11124,6 @@ What You Need To Do
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
 
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
-
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
 - Expect strict time limits, so avoid brute force where possible.
@@ -11854,9 +11167,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Memoized recursion over (i, j) handles literal and star branches.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
@@ -11906,9 +11216,6 @@ What You Need To Do
 1. Parse the input based on the official LeetCode function signature.
 2. Return exactly what the prompt asks for (value, index list, traversal, class behavior, etc.).
 3. Handle edge cases: empty input, one-element input, duplicates, and boundary indexes.
-
-Approach Hint
-Python starter with an implementation checklist. Replace \`solve\` with the exact LeetCode function signature and complete the marked steps.
 
 Typical Constraints (Interview Scale)
 - Input size is often up to 10^5 for linear problems.
