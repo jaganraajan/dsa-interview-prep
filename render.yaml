@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: leetcode-python-platform
+    runtime: docker
+    autoDeploy: true
